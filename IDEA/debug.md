@@ -4,7 +4,7 @@
 
 ## 界面
 
-![debug](C:\Users\zhangmingke\Desktop\github\knowledge\IDEA\img\debug.png)
+![debug](./img/debug.png)
 
 工具栏：
 
