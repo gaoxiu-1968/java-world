@@ -17,11 +17,15 @@ import org.elasticsearch.action.update.UpdateRequest;
 import org.elasticsearch.action.update.UpdateResponse;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
+import org.elasticsearch.client.eql.EqlSearchResponse;
 import org.elasticsearch.client.indices.CreateIndexRequest;
 import org.elasticsearch.client.indices.CreateIndexResponse;
 import org.elasticsearch.client.indices.GetIndexRequest;
 import org.elasticsearch.common.xcontent.XContentType;
 import org.elasticsearch.core.TimeValue;
+import org.elasticsearch.index.query.MatchAllQueryBuilder;
+import org.elasticsearch.index.query.QueryBuilder;
+import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.index.query.TermQueryBuilder;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
@@ -160,16 +164,16 @@ class EsApiApplicationTests {
 		//创建请求
 		BulkRequest request = new BulkRequest();
 		List<Person> list = new ArrayList<>();
-		list.add(new Person("zhangsan1",24));
-		list.add(new Person("zhangsan2",24));
-		list.add(new Person("zhangsan3",24));
-		list.add(new Person("zhangsan4",24));
-		list.add(new Person("zhangsan5",24));
-		list.add(new Person("zhangsan6",24));
+		list.add(new Person("李四四",24));
+		list.add(new Person("李四李四",24));
+		list.add(new Person("李四1",24));
+		list.add(new Person("李四2",24));
+		list.add(new Person("李四3",24));
+		list.add(new Person("李四4",24));
 		for (int i = 0; i < list.size(); i++) {
 			request.add(
 					new IndexRequest("person")
-					.id(""+(i+2))
+					.id(""+(i+7))
 					.source(JSON.toJSONString(list.get(i)),XContentType.JSON)
 			);
 		}
@@ -199,4 +203,72 @@ class EsApiApplicationTests {
 		}
 
 	}
+
+	/**
+	 * 分页查询
+	 */
+	@Test
+	void limitSearch() throws IOException {
+		SearchRequest searchRequest = new SearchRequest("person");
+		SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
+		searchSourceBuilder.from(0);
+		searchSourceBuilder.size(2);
+		searchRequest.source(searchSourceBuilder);
+		SearchResponse searchResponse = client.search(searchRequest, RequestOptions.DEFAULT);
+		SearchHit[] hits = searchResponse.getHits().getHits();
+		for (SearchHit h:hits) {
+			System.out.println(h.getSourceAsMap());
+		}
+	}
+
+	/**
+	 * 查询指定字段
+	 */
+	@Test
+	void searchFiled() throws IOException {
+		SearchRequest searchRequest = new SearchRequest("person");
+		SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
+		String[] includes = {"name"};
+		String[] excludes = {};
+		searchSourceBuilder.fetchSource(includes,excludes);
+		searchRequest.source(searchSourceBuilder);
+		SearchResponse searchResponse = client.search(searchRequest, RequestOptions.DEFAULT);
+		for (SearchHit h:searchResponse.getHits().getHits()) {
+			System.out.println(h.getSourceAsMap());
+		}
+	}
+
+	/**
+	 * 查询所有
+	 */
+	@Test
+	void searchAll() throws IOException {
+		SearchRequest searchRequest = new SearchRequest("person");
+		SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
+		MatchAllQueryBuilder matchAllQueryBuilder = QueryBuilders.matchAllQuery();
+		searchSourceBuilder.query(matchAllQueryBuilder);
+		searchRequest.source(searchSourceBuilder);
+		SearchResponse searchResponse = client.search(searchRequest, RequestOptions.DEFAULT);
+		for (SearchHit h:searchResponse.getHits().getHits()) {
+			System.out.println(h.getSourceAsMap());
+		}
+	}
+
+	/**
+	 * 单条件查询
+	 */
+	@Test
+	void simpleSearch() throws IOException {
+		SearchRequest searchRequest = new SearchRequest("person");
+		SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
+		QueryBuilder queryBuilder = QueryBuilders.matchQuery("name","李四");
+		searchSourceBuilder.query(queryBuilder);
+		searchRequest.source(searchSourceBuilder);
+		SearchResponse searchResponse = client.search(searchRequest, RequestOptions.DEFAULT);
+		for (SearchHit h:searchResponse.getHits().getHits()) {
+			System.out.println(h.getSourceAsMap());
+		}
+	}
+
+
 }

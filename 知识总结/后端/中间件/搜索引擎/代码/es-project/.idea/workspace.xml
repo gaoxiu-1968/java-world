@@ -23,10 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d29e1695-ece7-4987-8bc7-b5b9fa634c8f" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/es-api/src/main/java/top/zhangmingke/esapi/config/ESClientConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/es-api/src/main/java/top/zhangmingke/esapi/pojo/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es-server/src/main/java/top/zhangmingke/esserver/config/ESClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../工具/lombok/代码/src/main/java/pojo/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../工具/lombok/代码/src/main/java/service/Demo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../../数据结构/基本数据结构.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/es-api/src/test/java/top/zhangmingke/esapi/EsApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/es-api/src/test/java/top/zhangmingke/esapi/EsApiApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/es-api/target/test-classes/top/zhangmingke/esapi/EsApiApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/es-api/target/test-classes/top/zhangmingke/esapi/EsApiApplicationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../../算法/img/digui.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../../算法/img/xiaoguo.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../../算法/递归算法.md" beforeDir="false" />
@@ -65,32 +67,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/es-api/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/es-server/pom.xml" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="JUnit.EsApiApplicationTests.queryDoc">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.EsServerApplicationTests.getLimitList">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EsApiApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="es-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.zhangmingke.esapi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="top.zhangmingke.esapi" />
-      <option name="MAIN_CLASS_NAME" value="top.zhangmingke.esapi.EsApiApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -111,7 +100,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EsApiApplicationTests.deleteDoc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EsApiApplicationTests.searchAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="es-api" />
       <extension name="coverage">
         <pattern>
@@ -121,13 +110,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="top.zhangmingke.esapi" />
       <option name="MAIN_CLASS_NAME" value="top.zhangmingke.esapi.EsApiApplicationTests" />
-      <option name="METHOD_NAME" value="deleteDoc" />
+      <option name="METHOD_NAME" value="searchAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EsApiApplicationTests.queryDoc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EsApiApplicationTests.searchFiled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="es-api" />
       <extension name="coverage">
         <pattern>
@@ -137,13 +126,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="top.zhangmingke.esapi" />
       <option name="MAIN_CLASS_NAME" value="top.zhangmingke.esapi.EsApiApplicationTests" />
-      <option name="METHOD_NAME" value="queryDoc" />
+      <option name="METHOD_NAME" value="searchFiled" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EsApiApplicationTests.updateDoc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EsApiApplicationTests.simpleSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="es-api" />
       <extension name="coverage">
         <pattern>
@@ -153,7 +142,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="top.zhangmingke.esapi" />
       <option name="MAIN_CLASS_NAME" value="top.zhangmingke.esapi.EsApiApplicationTests" />
-      <option name="METHOD_NAME" value="updateDoc" />
+      <option name="METHOD_NAME" value="simpleSearch" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EsServerApplicationTests.getLimitList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="es-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.zhangmingke.esserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.zhangmingke.esserver" />
+      <option name="MAIN_CLASS_NAME" value="top.zhangmingke.esserver.EsServerApplicationTests" />
+      <option name="METHOD_NAME" value="getLimitList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -166,13 +171,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EsServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="es-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.zhangmingke.esserver.EsServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EsApiApplicationTests.queryDoc" />
+        <item itemvalue="JUnit.EsServerApplicationTests.getLimitList" />
+        <item itemvalue="JUnit.EsApiApplicationTests.searchAll" />
+        <item itemvalue="JUnit.EsApiApplicationTests.simpleSearch" />
+        <item itemvalue="JUnit.EsApiApplicationTests.searchFiled" />
         <item itemvalue="JUnit.EsApiApplicationTests.bulkDoc" />
-        <item itemvalue="JUnit.EsApiApplicationTests" />
-        <item itemvalue="JUnit.EsApiApplicationTests.deleteDoc" />
-        <item itemvalue="JUnit.EsApiApplicationTests.updateDoc" />
       </list>
     </recent_temporary>
   </component>
@@ -185,6 +197,7 @@
       <option name="presentableId" value="Default" />
       <updated>1629962077748</updated>
       <workItem from="1629962081825" duration="12900000" />
+      <workItem from="1630032901634" duration="13652000" />
     </task>
     <servers />
   </component>
@@ -201,35 +214,40 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1629962313865">
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1630033130423">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1629962313865" />
-    <state width="1237" height="138" key="GridCell.Tab.0.bottom" timestamp="1629982503585">
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1630033130423" />
+    <state width="1237" height="95" key="GridCell.Tab.0.bottom" timestamp="1630062827596">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="138" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1629982503585" />
-    <state width="1237" height="138" key="GridCell.Tab.0.center" timestamp="1629982503585">
+    <state width="1237" height="95" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1630062827596" />
+    <state width="1237" height="95" key="GridCell.Tab.0.center" timestamp="1630062827596">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="138" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1629982503585" />
-    <state width="1237" height="138" key="GridCell.Tab.0.left" timestamp="1629982503585">
+    <state width="1237" height="95" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1630062827596" />
+    <state width="1237" height="95" key="GridCell.Tab.0.left" timestamp="1630062827596">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="138" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1629982503585" />
-    <state width="1237" height="138" key="GridCell.Tab.0.right" timestamp="1629982503585">
+    <state width="1237" height="95" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1630062827596" />
+    <state width="1237" height="95" key="GridCell.Tab.0.right" timestamp="1630062827596">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="138" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1629982503585" />
+    <state width="1237" height="95" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1630062827596" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1629962341517">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1629962341517" />
-    <state x="183" y="1" key="new project wizard" timestamp="1629962152590">
+    <state x="183" y="1" key="new project wizard" timestamp="1630032958755">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="183" y="1" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1629962152590" />
+    <state x="183" y="1" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1630032958755" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1630034824135">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1630034824135" />
   </component>
 </project>

@@ -22,8 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6df2f264-539f-44a7-b72a-287d6bc68456" name="默认的" comment="">
+    <list default="true" id="7a801962-371a-4467-8704-b9d030325394" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../中间件/搜索引擎/代码/es-project/es-server/src/main/java/top/zhangmingke/esserver/config/ESClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojo/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/Demo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../数据结构/基本数据结构.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../中间件/搜索引擎/代码/es-project/es-api/src/test/java/top/zhangmingke/esapi/EsApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../中间件/搜索引擎/代码/es-project/es-api/src/test/java/top/zhangmingke/esapi/EsApiApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../中间件/搜索引擎/代码/es-project/es-api/target/test-classes/top/zhangmingke/esapi/EsApiApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../中间件/搜索引擎/代码/es-project/es-api/target/test-classes/top/zhangmingke/esapi/EsApiApplicationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../算法/img/digui.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../算法/img/xiaoguo.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../算法/递归算法.md" beforeDir="false" />
@@ -50,7 +55,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1xGZI9RytceflUmPxnsnedYn9gt" />
+  <component name="ProjectId" id="1xHzS6jEg7lBQE2cgFfjpkymM9g" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -62,13 +67,13 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="应用程序.paramObject">
-    <configuration name="paramObject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bean.paramObject" />
-      <module name="fastjson-project" />
+  <component name="RunManager">
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="service.Demo" />
+      <module name="lombok-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bean.*" />
+          <option name="PATTERN" value="service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,46 +81,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="toJsonString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bean.toJsonString" />
-      <module name="fastjson-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bean.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.paramObject" />
-        <item itemvalue="应用程序.toJsonString" />
+        <item itemvalue="应用程序.Demo" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6df2f264-539f-44a7-b72a-287d6bc68456" name="默认的" comment="" />
-      <created>1629983304382</created>
+      <changelist id="7a801962-371a-4467-8704-b9d030325394" name="默认的" comment="" />
+      <created>1630026802048</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1629983304382</updated>
-      <workItem from="1629983305395" duration="3900000" />
+      <updated>1630026802048</updated>
+      <workItem from="1630026803082" duration="3113000" />
+      <workItem from="1630062824932" duration="2220000" />
     </task>
     <servers />
   </component>
@@ -132,27 +126,36 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="446" y="24" key="#com.intellij.ide.util.MemberChooser" timestamp="1629983435659">
+    <state x="408" y="141" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1630064074767">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="24" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1629983435659" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1630026769707">
+    <state x="408" y="141" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1630064074767" />
+    <state x="446" y="56" key="#com.intellij.ide.util.MemberChooser" timestamp="1630063972267">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1630026769707" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1630026769707">
+    <state x="446" y="56" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1630063972267" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1630069657003">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1630026769707" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1630026769707">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1630069657003" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1630069657003">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1630026769707" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1630026769707">
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1630069657003" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1630069657002">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1630026769707" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1630069657002" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1630069657003">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1630069657003" />
+    <state x="183" y="1" key="new project wizard" timestamp="1630032887491">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="183" y="1" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1630032887491" />
   </component>
 </project>
