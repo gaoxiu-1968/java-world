@@ -21,6 +21,7 @@ import org.elasticsearch.client.eql.EqlSearchResponse;
 import org.elasticsearch.client.indices.CreateIndexRequest;
 import org.elasticsearch.client.indices.CreateIndexResponse;
 import org.elasticsearch.client.indices.GetIndexRequest;
+import org.elasticsearch.client.indices.GetIndexResponse;
 import org.elasticsearch.common.xcontent.XContentType;
 import org.elasticsearch.core.TimeValue;
 import org.elasticsearch.index.query.MatchAllQueryBuilder;
@@ -63,9 +64,9 @@ class EsApiApplicationTests {
 	 */
 	@Test
 	void getIndex() throws IOException {
-		GetIndexRequest request = new GetIndexRequest("person");
-		boolean exists = client.indices().exists(request, RequestOptions.DEFAULT);
-		System.out.println(exists);
+		GetIndexRequest request = new GetIndexRequest("jc_org_info");
+		GetIndexResponse getIndexResponse = client.indices().get(request, RequestOptions.DEFAULT);
+		System.out.println(getIndexResponse.getMappings());
 	}
 
 	/**

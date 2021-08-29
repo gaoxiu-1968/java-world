@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ESClientConfig {
     private final String username = "elastic";
-    private final String password = "zjhc123QWE";
+    private final String password = "zjhc123!@#";
 
     @Bean
     public RestHighLevelClient restHighLevelClient(){
@@ -23,7 +23,7 @@ public class ESClientConfig {
         final CredentialsProvider credentialsProvider = new BasicCredentialsProvider();
         credentialsProvider.setCredentials(AuthScope.ANY,
                 new UsernamePasswordCredentials(username, password));
-        RestClientBuilder restClientBuilder = RestClient.builder(new HttpHost("49.234.74.182", 9200, "http"));
+        RestClientBuilder restClientBuilder = RestClient.builder(new HttpHost("10.145.240.1", 9200, "http"));
         restClientBuilder.setHttpClientConfigCallback(new RestClientBuilder.HttpClientConfigCallback() {
             @Override
             public HttpAsyncClientBuilder customizeHttpClient(HttpAsyncClientBuilder httpAsyncClientBuilder) {
