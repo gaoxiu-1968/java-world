@@ -24,10 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="87b9bd09-a19c-45ee-b780-e40b422c6599" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/../../../../../../数据结构/基本数据结构.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../中间件/搜索引擎/ElastaicSearch文档/springboot操作es.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../中间件/搜索引擎/代码/es-project/es-api/src/test/java/top/zhangmingke/esapi/EsApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../中间件/搜索引擎/代码/es-project/es-api/src/test/java/top/zhangmingke/esapi/EsApiApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../中间件/搜索引擎/代码/es-project/es-api/target/test-classes/top/zhangmingke/esapi/EsApiApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../中间件/搜索引擎/代码/es-project/es-api/target/test-classes/top/zhangmingke/esapi/EsApiApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../中间件/搜索引擎/代码/es-project/es-server/src/main/java/top/zhangmingke/esserver/config/ESClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../中间件/搜索引擎/代码/es-project/es-server/src/main/java/top/zhangmingke/esserver/config/ESClientConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../../算法/img/digui.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../../算法/img/xiaoguo.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../../算法/递归算法.md" beforeDir="false" />
@@ -58,18 +54,24 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="E:/newZNCRM/crmdataanalysis" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Service1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.zhangmignke.service1.Service1Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -85,6 +87,7 @@
       <updated>1630137432132</updated>
       <workItem from="1630137433271" duration="3447000" />
       <workItem from="1630151580284" duration="3658000" />
+      <workItem from="1630226547578" duration="8816000" />
     </task>
     <servers />
   </component>
@@ -104,17 +107,21 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1630138811738">
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1630245303069">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1630138811738" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1630138813574">
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1630245303069" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1630229663280">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1630138813574" />
-    <state x="183" y="1" width="986" height="679" key="new project wizard" timestamp="1630155278777">
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1630229663280" />
+    <state x="455" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1630229631953">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="183" y="1" width="986" height="679" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1630155278777" />
+    <state x="455" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1630229631953" />
+    <state x="183" y="1" width="986" height="679" key="new project wizard" timestamp="1630226986257">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="183" y="1" width="986" height="679" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1630226986257" />
   </component>
 </project>
