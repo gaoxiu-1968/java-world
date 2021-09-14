@@ -23,10 +23,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="987b96c6-3ab1-46f0-a8e0-5becee9931de" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/zhangmingke/cache/controller/DemoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/zhangmingke/cache/dao/PersonDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/zhangmingke/cache/entity/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/PersonMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../../java面试题/面试总结/HR面试问题.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../开发语言/sql/mysql/img/image-20210904174011144.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../java面试题/前端面试题问题预测.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../spring/demo-project/aop/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../spring/demo-project/aop/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../spring/demo-project/aop/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../spring/demo-project/aop/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../spring/demo-project/aop/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../spring/demo-project/aop/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../spring/demo-project/aop/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../spring/demo-project/aop/src/main/java/com/zhangmingke/aop/AopApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../spring/demo-project/aop/src/main/java/com/zhangmingke/aop/service/Buy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../spring/demo-project/aop/src/main/java/com/zhangmingke/aop/servieImpl/Boy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../spring/demo-project/aop/src/main/java/com/zhangmingke/aop/servieImpl/Girl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../spring/demo-project/aop/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../spring/demo-project/aop/src/test/java/com/zhangmingke/aop/AopApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../../数据结构/基本数据结构.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../../算法/img/digui.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../../算法/img/xiaoguo.png" beforeDir="false" />
@@ -51,7 +63,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="D:/maven/apache-maven-3.8.1" />
+        <option name="mavenHome" value="D:\maven\apache-maven-3.8.1" />
         <option name="userSettingsFile" value="D:\maven\apache-maven-3.8.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -75,18 +87,20 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
+  <component name="RunAnythingCache">
+    <myKeys>
+      <visibility group="Gradle tasks" flag="true" />
+      <visibility group="Grunt tasks" flag="true" />
+      <visibility group="Gulp tasks" flag="true" />
+      <visibility group="Maven goals" flag="true" />
+      <visibility group="Node.js" flag="true" />
+      <visibility group="Recent projects" flag="true" />
+      <visibility group="Run configurations" flag="true" />
+      <visibility group="npm" flag="true" />
+      <visibility group="yarn" flag="true" />
+    </myKeys>
+  </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CacheApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cache" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="top.zhangmingke.cache.CacheApplication" />
@@ -103,7 +117,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1630584975742</updated>
-      <workItem from="1630584978330" duration="5041000" />
+      <workItem from="1630584978330" duration="9041000" />
+      <workItem from="1630894612532" duration="591000" />
+      <workItem from="1630914316963" duration="11000" />
     </task>
     <servers />
   </component>
@@ -120,6 +136,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="354" y="41" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1630586755329">
